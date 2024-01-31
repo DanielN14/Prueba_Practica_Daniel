@@ -1,0 +1,53 @@
+# Reglas generales para todo el repositorio
+
+# Ignorar archivos temporales y de compilación
+*.log
+*.tmp
+/bin/
+/obj/
+
+# Ignorar archivos específicos de .NET
+*.user
+*.suo
+*.cache
+
+# Ignorar archivos de Visual Studio
+.vscode/
+*.sln
+*.suo
+*.user
+*.userprefs
+*.seed
+*.dbmdl
+*.pch
+*.ncb
+*.idb
+*.ipch
+*.aps
+*.resset
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.pyc
+*.xml
+ipch/
+obj/
+[Bb]in
+[Ll]og
+[Ll]ogs/
+
+# Reglas específicas para "Proyecto.Net"
+/Ejercicio1\UserRegistryApp\bin
+Ejercicio1\UserRegistryApp\obj

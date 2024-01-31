@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+@* https://codepen.io/braytiner/pen/wZWBqP *@
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-6 mx-auto">
+            <div class="card my-3">
+                <div class="card-body p-5">
+                    <h3 class="card-title text-center">Login</h3>
+                    <form asp-asp-controller="Login" asp-action="Index" method="post">
+                        <div class="mb-4">
+                            <div class="form-label-group mb-3">
+                                <label class="form-label" for="username">Nombre de usuario</label>
+                                <input type="text" name="username" id="username" class="form-control" placeholder="Nombre de usuario"
+                                    required autofocus>
+                            </div>
+
+                            <div class="form-label-group">
+                                <label class="form-label" for="clave">Clave</label>
+                                <input type="password" name="clave" id="clave" class="form-control" placeholder="Clave"
+                                    required>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary w-100" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.ErrorMessage
+    </div>
+}
